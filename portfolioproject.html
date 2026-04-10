@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aria Voss · Graphic Designer</title>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#hero">Aria Voss</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Work</a></li>
+      <li><a href="#testimonials">Clients</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <h1>Aria Voss</h1>
+    <p>Freelance Graphic Designer</p>
+    <p>Brand · Identity · Print · Digital</p>
+    <a href="#gallery">View My Work</a>
+    <a href="#contact">Let's Collaborate</a>
+  </section>
+
+  <!-- ABOUT / BIO -->
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="C:\Users\Himanshu waghaye\Downloads\wd\download.jpg" alt="Aria Voss - Graphic Designer" />
+    <p>
+      Hey — I'm Aria Voss, a graphic designer with over eight years of shaping
+      how brands present themselves to the world.
+    </p>
+    <p>
+      Before going independent, I spent four years at a Berlin-based branding
+      studio. Today I take on select projects that let me dig deep and deliver
+      work that actually moves the needle.
+    </p>
+
+    <h3>Skills</h3>
+    <ul>
+      <li>Brand Identity</li>
+      <li>Logo Design</li>
+      <li>Typography</li>
+      <li>UI/UX</li>
+      <li>Packaging</li>
+      <li>Illustration</li>
+    </ul>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <h2>Selected Work</h2>
+
+    <!-- Filter Buttons -->
+    <div>
+      <button data-filter="all">All</button>
+      <button data-filter="branding">Branding</button>
+      <button data-filter="print">Print</button>
+      <button data-filter="digital">Digital</button>
+      <button data-filter="packaging">Packaging</button>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="gallery-grid">
+
+      <article data-category="branding">
+        <img src="work-1.jpg" alt="Luminos Collective Rebrand" />
+        <h3>Luminos Collective</h3>
+        <p>Brand Identity · 2023</p>
+      </article>
+
+      <article data-category="packaging">
+        <img src="work-2.jpg" alt="Botanic and Co Packaging" />
+        <h3>Botanic &amp; Co.</h3>
+        <p>Packaging Design · 2023</p>
+      </article>
+
+      <article data-category="digital">
+        <img src="work-3.jpg" alt="Vela App UI" />
+        <h3>Vela App UI</h3>
+        <p>UX/UI Design · 2024</p>
+      </article>
+
+      <article data-category="print">
+        <img src="work-4.jpg" alt="Studio Mer Catalogue" />
+        <h3>Studio Mer Catalogue</h3>
+        <p>Print &amp; Editorial · 2022</p>
+      </article>
+
+      <article data-category="branding">
+        <img src="work-5.jpg" alt="Ferro Spirits Identity" />
+        <h3>Ferro Spirits</h3>
+        <p>Brand Identity · 2024</p>
+      </article>
+
+      <article data-category="digital">
+        <img src="work-6.jpg" alt="Archform Website" />
+        <h3>Archform Website</h3>
+        <p>Web Design · 2022</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <h2>What Clients Say</h2>
+
+    <div class="slider">
+
+      <blockquote>
+        <p>"Working with Aria transformed how our brand communicates. She gave us a visual language our whole team now rallies behind."</p>
+        <cite>Marcus Klein — CEO, Luminos Collective</cite>
+      </blockquote>
+
+      <blockquote>
+        <p>"Our packaging went from forgettable to award-shortlisted in one project cycle. She's both a strategic thinker and a brilliant craftsperson."</p>
+        <cite>Sofia Peretti — Founder, Botanic &amp; Co.</cite>
+      </blockquote>
+
+      <blockquote>
+        <p>"She asks the questions no one else thinks to ask, then delivers something that makes the whole team fall quiet when they first see it."</p>
+        <cite>James Lau — Product Director, Vela</cite>
+      </blockquote>
+
+    </div>
+
+    <button id="prevBtn">← Prev</button>
+    <button id="nextBtn">Next →</button>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Get In Touch</h2>
+    <p>Email: <a href="mailto:hello@ariavoss.design">hello@ariavoss.design</a></p>
+    <p>Phone: <a href="tel:+4930123456">+49 30 123 456</a></p>
+    <p>Location: Berlin, Germany</p>
+
+    <form action="#" method="post">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Jane Doe" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="jane@company.com" required />
+
+      <label for="project">Project Type</label>
+      <select id="project" name="project">
+        <option value="">Select…</option>
+        <option value="branding">Brand Identity</option>
+        <option value="packaging">Packaging</option>
+        <option value="digital">Digital / UI</option>
+        <option value="print">Print</option>
+      </select>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Tell me about your project…" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Aria Voss · All Rights Reserved</p>
+    <ul>
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">Behance</a></li>
+      <li><a href="#">LinkedIn</a></li>
+    </ul>
+  </footer>
+
+</body>
+</html>
