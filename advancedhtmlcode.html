@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aria Voss – Freelance Graphic Designer specialising in Brand Identity, Print and Digital." />
+  <meta name="author" content="Aria Voss" />
+  <title>Aria Voss · Graphic Designer</title>
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════ NAVIGATION ═══════════════════════ -->
+  <nav>
+    <a href="#hero">Aria Voss</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Work</a></li>
+      <li><a href="#testimonials">Clients</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ═══════════════════════ HERO ═══════════════════════ -->
+  <section id="hero">
+    <h1>Aria Voss</h1>
+    <p>Freelance Graphic Designer</p>
+    <p><mark>Brand · Identity · Print · Digital</mark></p>
+    <a href="#gallery" role="button">View My Work</a>
+    <a href="#contact" role="button">Let's Collaborate</a>
+  </section>
+
+  <!-- ═══════════════════════ ABOUT / BIO ═══════════════════════ -->
+  <section id="about">
+    <h2>About Me</h2>
+
+    <!-- ▶ HTML5: <figure> + <figcaption> for semantic image grouping -->
+    <figure>
+      <img src="download.jpg" alt="Aria Voss – Graphic Designer" width="280" height="280"
+           loading="lazy" />
+      <figcaption>Aria Voss · Berlin, Germany</figcaption>
+    </figure>
+
+    <p>
+      <i>Hey — I'm <abbr title="Aria Voss Design Studio">Aria Voss</abbr>, a graphic designer
+      with over eight years of shaping how brands present themselves to the world.</i>
+    </p>
+    <p>
+      <i>Before going independent, I spent four years at a Berlin-based branding studio.
+      Today I take on select projects that let me dig deep and deliver work that actually
+      moves the needle.</i>
+    </p>
+
+    <!-- ▶ HTML5: <time> for machine-readable date -->
+    <p>Available for new projects from
+      <time datetime="2025-08-01">August 2025</time>.
+    </p>
+
+    <!-- ▶ HTML5: <details> + <summary> for collapsible skill list -->
+    <details open>
+      <summary><h3 style="display:inline">Skills &amp; Expertise</h3></summary>
+
+      <!-- ▶ HTML5: <meter> for visual skill-level indicators -->
+      <ul class="skills-list">
+        <li>
+          <span>Brand Identity</span>
+          <meter value="0.95" min="0" max="1" low="0.3" high="0.7" optimum="1"
+                 title="95%">95%</meter>
+        </li>
+        <li>
+          <span>Logo Design</span>
+          <meter value="0.90" min="0" max="1" low="0.3" high="0.7" optimum="1"
+                 title="90%">90%</meter>
+        </li>
+        <li>
+          <span>Typography</span>
+          <meter value="0.88" min="0" max="1" low="0.3" high="0.7" optimum="1"
+                 title="88%">88%</meter>
+        </li>
+        <li>
+          <span><abbr title="User Interface / User Experience">UI/UX</abbr></span>
+          <meter value="0.80" min="0" max="1" low="0.3" high="0.7" optimum="1"
+                 title="80%">80%</meter>
+        </li>
+        <li>
+          <span>Packaging</span>
+          <meter value="0.85" min="0" max="1" low="0.3" high="0.7" optimum="1"
+                 title="85%">85%</meter>
+        </li>
+        <li>
+          <span>Illustration</span>
+          <meter value="0.75" min="0" max="1" low="0.3" high="0.7" optimum="1"
+                 title="75%">75%</meter>
+        </li>
+      </ul>
+    </details>
+
+    <!-- ▶ HTML5: <progress> bar showing project availability -->
+    <p>Current workload capacity:</p>
+    <label for="capacity">Available slots this quarter</label>
+    <progress id="capacity" value="2" max="5">40%</progress>
+    <output for="capacity">2 of 5 slots remaining</output>
+  </section>
+
+  <!-- ═══════════════════════ GALLERY ═══════════════════════ -->
+  <section id="gallery">
+    <h2>Selected Work</h2>
+
+    <!-- Filter Buttons with data-* attributes -->
+    <div role="toolbar" aria-label="Filter projects">
+      <button data-filter="all" aria-pressed="true">All</button>
+      <button data-filter="branding"  aria-pressed="false">Branding</button>
+      <button data-filter="packaging" aria-pressed="false">Packaging</button>
+      <button data-filter="digital"   aria-pressed="false">Digital</button>
+      <button data-filter="print"     aria-pressed="false">Print</button>
+    </div>
+
+    <!-- Gallery Grid — articles use data-category for JS filtering -->
+    <div class="gallery-grid">
+
+      <article data-category="branding">
+        <!-- ▶ HTML5: <picture> for responsive images -->
+        <picture>
+          <source media="(min-width:800px)" srcset="nova-lg.jpg" />
+          <img src="nova-sm.jpg" alt="Nova Coffee – brand identity project" loading="lazy" />
+        </picture>
+        <h3>Nova Coffee</h3>
+        <p>Full brand identity for a specialty roaster in Munich — logo, colour system,
+           and packaging guidelines.</p>
+      </article>
+
+      <article data-category="packaging">
+        <picture>
+          <source media="(min-width:800px)" srcset="bloom-lg.jpg" />
+          <img src="bloom-sm.jpg" alt="Bloom Skincare – packaging design" loading="lazy" />
+        </picture>
+        <h3>Bloom Skincare</h3>
+        <p>Sustainable packaging suite for a natural cosmetics start-up, including
+           box, label, and tissue design.</p>
+      </article>
+
+      <article data-category="digital">
+        <picture>
+          <source media="(min-width:800px)" srcset="pulse-lg.jpg" />
+          <img src="pulse-sm.jpg" alt="Pulse App – UI/UX design" loading="lazy" />
+        </picture>
+        <h3>Pulse App</h3>
+        <p>UI/UX design for a wellness tracking app — wireframes through to polished
+           high-fidelity screens.</p>
+      </article>
+
+      <article data-category="print">
+        <picture>
+          <source media="(min-width:800px)" srcset="atlas-lg.jpg" />
+          <img src="atlas-sm.jpg" alt="Atlas Magazine – editorial layout" loading="lazy" />
+        </picture>
+        <h3>Atlas Magazine</h3>
+        <p>Editorial layout and typography system for a biannual travel publication.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ TESTIMONIALS ═══════════════════════ -->
+  <section id="testimonials">
+    <h2>What Clients Say</h2>
+
+    <div class="slider" aria-live="polite">
+
+      <blockquote>
+        <p>Aria transformed our brand from forgettable to unforgettable.
+           The process was seamless and the results speak for themselves.</p>
+        <cite>— Lena Müller, <abbr title="Chief Executive Officer">CEO</abbr>,
+              Nova Coffee</cite>
+      </blockquote>
+
+      <blockquote>
+        <p>Incredibly detail-oriented and easy to work with.
+           Our packaging sales increased by 30 % within the first quarter.</p>
+        <cite>— Jonas Schreiber, Founder, Bloom Skincare</cite>
+      </blockquote>
+
+      <blockquote>
+        <p>Aria delivered a UI design system that our dev team could implement
+           straight away. Zero back-and-forth, all quality.</p>
+        <cite>— Priya Nair, Product Lead, Pulse</cite>
+      </blockquote>
+
+    </div>
+
+    <button id="prevBtn" aria-label="Previous testimonial">← Prev</button>
+    <button id="nextBtn" aria-label="Next testimonial">Next →</button>
+  </section>
+
+  <!-- ═══════════════════════ CONTACT ═══════════════════════ -->
+  <section id="contact">
+    <h2>Get In Touch</h2>
+
+    <!-- ▶ HTML5: <address> for contact info -->
+    <address>
+      <p>Email: <a href="mailto:hello@ariavoss.design">hello@ariavoss.design</a></p>
+      <p>Phone: <a href="tel:+4930123456">+49 30 123 456</a></p>
+      <p>Location: Berlin, Germany</p>
+    </address>
+
+    <!-- ▶ HTML5: advanced form attributes — autocomplete, autofocus,
+                 pattern, required, minlength, placeholder, novalidate removed
+                 to keep native validation active                            -->
+    <form action="#" method="post" id="contactForm" autocomplete="on">
+
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Jane Doe"
+             autocomplete="name" minlength="2" maxlength="60"
+             pattern="[A-Za-z\s\-]+" title="Letters, spaces, hyphens only"
+             autofocus required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="jane@company.com"
+             autocomplete="email" required />
+
+      <label for="website">Your Website <small>(optional)</small></label>
+      <input type="url" id="website" name="website"
+             placeholder="https://yoursite.com" autocomplete="url" />
+
+      <label for="budget">Approximate Budget (₹)</label>
+      <input type="range" id="budget" name="budget"
+             min="5000" max="500000" step="5000" value="50000"
+             oninput="budgetOutput.value = '₹' + this.value" />
+      <output id="budgetOutput" for="budget">₹50000</output>
+
+      <label for="project">Project Type</label>
+      <!-- ▶ HTML5: <datalist> for combo-box suggestions -->
+      <input type="text" id="project" name="project" list="projectTypes"
+             placeholder="Start typing…" />
+      <datalist id="projectTypes">
+        <option value="Brand Identity"></option>
+        <option value="Packaging Design"></option>
+        <option value="Digital / UI Design"></option>
+        <option value="Print Design"></option>
+        <option value="Illustration"></option>
+        <option value="Logo Design"></option>
+      </datalist>
+
+      <label for="deadline">Desired Start Date</label>
+      <input type="date" id="deadline" name="deadline"
+             min="2025-07-01" autocomplete="off" />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message"
+                placeholder="Tell me about your project…"
+                minlength="20" maxlength="1000" rows="6" required></textarea>
+
+      <button type="submit">Send Message</button>
+      <button type="reset">Clear</button>
+    </form>
+  </section>
+
+  <!-- ═══════════════════════ DIALOG (modal) ═══════════════════════ -->
+  <!-- ▶ HTML5: <dialog> element for a thank-you popup -->
+  <dialog id="thankYouDialog" aria-modal="true" aria-labelledby="dialogTitle">
+    <h3 id="dialogTitle">Message Sent 🎉</h3>
+    <p>Thanks for reaching out! I'll get back to you within <strong>48 hours</strong>.</p>
+    <button onclick="document.getElementById('thankYouDialog').close()">Close</button>
+  </dialog>
+
+  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+  <footer>
+    <p>© <time datetime="2025">2025</time> Aria Voss · All Rights Reserved</p>
+    <ul>
+      <li><a href="#" rel="noopener noreferrer" target="_blank">Instagram</a></li>
+      <li><a href="#" rel="noopener noreferrer" target="_blank">Behance</a></li>
+      <li><a href="#" rel="noopener noreferrer" target="_blank">LinkedIn</a></li>
+    </ul>
+  </footer>
+
+  <!-- ═══════════════════════ SCRIPTS ═══════════════════════ -->
+  <script>
+    /* ── Testimonial Slider ── */
+    const quotes = document.querySelectorAll('.slider blockquote');
+    let current = 0;
+    function showSlide(n) {
+      quotes.forEach((q, i) => q.hidden = (i !== n));
+    }
+    showSlide(0);
+    document.getElementById('nextBtn').addEventListener('click', () => {
+      current = (current + 1) % quotes.length;
+      showSlide(current);
+    });
+    document.getElementById('prevBtn').addEventListener('click', () => {
+      current = (current - 1 + quotes.length) % quotes.length;
+      showSlide(current);
+    });
+
+    /* ── Gallery Filter ── */
+    const filterBtns = document.querySelectorAll('[data-filter]');
+    const cards      = document.querySelectorAll('.gallery-grid article');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.setAttribute('aria-pressed', 'false'));
+        btn.setAttribute('aria-pressed', 'true');
+        const f = btn.dataset.filter;
+        cards.forEach(c => {
+          c.hidden = !(f === 'all' || c.dataset.category === f);
+        });
+      });
+    });
+
+    /* ── Thank-you Dialog on form submit ── */
+    document.getElementById('contactForm').addEventListener('submit', e => {
+      e.preventDefault();
+      document.getElementById('thankYouDialog').showModal();
+    });
+  </script>
+
+</body>
+</html>
